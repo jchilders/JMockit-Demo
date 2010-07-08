@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<head>
+  <title>JMockit Coverage Report</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <link rel='stylesheet' type='text/css' href='../../coverage.css'/>
+  <script type='text/javascript' src='../../coverage.js'></script>
+  <link rel='stylesheet' type='text/css' href='../../prettify.css'/>
+  <script type='text/javascript' src='../../prettify.js'></script>
+</head>
+<body onload='prettyPrint()'>
+  <table cellpadding='0' cellspacing='1'>
+    <caption><code>../JMockitDemo/src/com/initech/ComplexClass.java</code></caption>
+    <tr>
+      <td class='line'>1</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>package com.initech;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>2</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>3</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>import java.util.ArrayList;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>4</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>import java.util.List;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>5</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>6</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>public class ComplexClass {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>7</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	private final List&lt;ASupporter>_aList;</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>8</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>9</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l9s0'>	public ComplexClass() {</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#setup: 24        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>10</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l10s0'>		_aList = new ArrayList&lt;ASupporter>();</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#setup: 24        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>11</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l11s0'>	}</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#setup: 24        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>12</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>13</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	public boolean addSupporter(ASupporter newA) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>14</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l14s0'>		return _aList.add(newA);</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#validity: 34, 35        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>15</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>16</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>17</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	public int size() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>18</td><td class='count'>0</td>
+      <td><pre class='prettyprint uncovered' id='l18s0'>		return _aList.size();</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>19</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>20</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>21</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	public boolean bSupporterValidator(int id) {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>22</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l22s0'>		BSupporter bSupp = new BSupporter(id);</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#buildBSupporter: 81, 86        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>23</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l23s0'>		return bSupp.isValid();</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#buildBSupporter: 81, 86        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>24</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>25</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>26</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	public boolean isValid() {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>1</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#807f00' onclick='hidePath()'>Path coverage: 1/2</span>
+        <span class='uncovered' onclick="showPath(this,'l27s0 l28s0 l29s0')">A: 0</span>
+        <span class='covered' onclick="showPath(this,'l27s0 l28s0 l33s0')">B: 1</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>27</td><td class='count'>6</td>
+      <td><pre class='prettyprint jmp'>		<span id='l27s0' title='Executions: 6' class='covered cp' onclick='showHide(this,0)'>for(ASupporter aSupporter</span> : <span id='l27s1' title='Executions: 3' class='covered cp' onclick='showHide(this,1)'>_aList)</span> </pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#validity: 38x4, 43        </ol>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#validity: 38x2, 43        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>28</td><td class='count'>3</td>
+      <td><pre class='prettyprint jmp'>			<span id='l28s0' title='Executions: 3' class='covered cp' onclick='showHide(this,0)'>if (!aSupporter.isValid()) {</span></pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#validity: 38x2, 43        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>29</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l29s0'>				return false;</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#validity: 43        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>30</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>			}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>31</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>		}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>32</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>33</td><td class='count'>1</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l33s0'>		return true;</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#validity: 38        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>34</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>35</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>36</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	public boolean persist() {</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>37</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l37s0'>		notifyEveryone(1);</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#persistSupporters: 49</li>
+          <li>com.initech.ComplexClass_JMockit_Test#persistAndNotify: 59        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>38</td><td class='count'>2</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l38s0'>		return Database.persist(this);</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#persistSupporters: 49</li>
+          <li>com.initech.ComplexClass_JMockit_Test#persistAndNotify: 59        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>39</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>40</td><td colspan='2'></td>
+    </tr>
+    <tr>
+      <td class='line'>41</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	private static final boolean notifyEveryone(int priority) {</pre></td>
+    </tr>
+    <tr>
+      <td></td><td class='count'>5</td>
+      <td class='paths'>
+        <span style='cursor:default; background-color:#00ff00' onclick='hidePath()'>Path coverage: 2/2</span>
+        <span class='covered' onclick="showPath(this,'l42s0 l44s0 l44s1')">A: 1</span>
+        <span class='covered' onclick="showPath(this,'l42s0 l44s0 l44s2')">B: 4</span>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>42</td><td class='count'>10</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l42s0'>		System.out.println("Hey you, a ComplexObject was persisted. Priority "</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#persistSupporters: 49x2</li>
+          <li>com.initech.ComplexClass_JMockit_Test#persistAndNotify: 59x2, 61x2</li>
+          <li>com.initech.ComplexClass_JMockit_Test#notifier: 69x2, 72        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>43</td><td class='count'>5</td>
+      <td><pre class='prettyprint covered cp' onclick='showHide(this)' id='l43s0'>				+ priority + "!");</pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#persistSupporters: 49</li>
+          <li>com.initech.ComplexClass_JMockit_Test#persistAndNotify: 59, 61</li>
+          <li>com.initech.ComplexClass_JMockit_Test#notifier: 69, 72        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>44</td><td class='count'>5</td>
+      <td><pre class='prettyprint jmp'>		<span id='l44s0' title='Executions: 5' class='covered cp' onclick='showHide(this,0)'>return priority % 2 == 0;</span></pre>
+        <ol style='display: none;'>
+          <li>com.initech.ComplexClass_JMockit_Test#persistSupporters: 49</li>
+          <li>com.initech.ComplexClass_JMockit_Test#persistAndNotify: 59, 61</li>
+          <li>com.initech.ComplexClass_JMockit_Test#notifier: 69, 72        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class='line'>45</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>	}</pre></td>
+    </tr>
+    <tr>
+      <td class='line'>46</td><td>&nbsp;</td>
+      <td><pre class='prettyprint'>}</pre></td>
+    </tr>
+  </table>
+</body>
+</html>
